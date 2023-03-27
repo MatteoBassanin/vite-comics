@@ -6,16 +6,7 @@
 
         <nav class="navbar d_flex align_center">
             <ul class="d_flex ">
-                <li class="navbar_link"><a href="#">CHARACTERS</a></li>
-                <li class="navbar_link"><a href="#">COMICS</a></li>
-                <li class="navbar_link"><a href="#">MOVIES</a></li>
-                <li class="navbar_link"><a href="#">TV</a></li>
-                <li class="navbar_link"><a href="#">GAMES</a></li>
-                <li class="navbar_link"><a href="#">COLLECTIBLES</a></li>
-                <li class="navbar_link"><a href="#">FANS</a></li>
-                <li class="navbar_link"><a href="#">NEWS</a></li>
-                <li class="navbar_link"><a href="#">SHOP</a></li>
-
+                <li v-for="element in linkArrayTop" class="navbar_link"><a href="#">{{ element.name }}</a></li>
             </ul>
         </nav>
 
@@ -45,5 +36,42 @@
 </style>
 
 <script>
+export default {
+    data() {
+        return {
+            linkArrayTop: [
+                {
+                    name: "CHARACTERS",
+                },
+                {
+                    name: "COMICS",
+                },
+                {
+                    name: "MOVIES",
+                },
+                {
+                    name: "TV",
+                },
+                {
+                    name: "GAMES",
+                },
+                {
+                    name: "COLLECTIBLES",
+                },
+                {
+                    name: "FANS",
+                },
+                {
+                    name: "NEWS",
+                },
+                {
+                    name: "SHOP",
+                },
+
+            ]
+        }
+    }
+};
+
 
 </script>
