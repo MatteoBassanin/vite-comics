@@ -1,0 +1,39 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+/* utilities */
+
+.d_flex {
+  display: flex;
+}
+
+.justify_center {
+  justify-content: center;
+}
+
+.align_center {
+  align-items: center;
+}
+
+.space_between {
+  justify-content: space-between;
+}
+
+.w_80_auto {
+  width: 80%;
+  margin: auto;
+}
