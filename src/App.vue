@@ -1,10 +1,13 @@
 <script>
 import TheHeader from './components/TheHeader.vue';
+import BlueBanner from './components/BlueBanner.vue'
+
 
 export default {
 
   components: {
-    TheHeader
+    TheHeader,
+    BlueBanner
   }
 }
 </script>
@@ -12,7 +15,9 @@ export default {
 <template>
   <TheHeader />
   <main>
-    >>> Content goes here --- </main>
+    >>> Content goes here ---
+  </main>
+  <BlueBanner />
 </template>
 
 <style>

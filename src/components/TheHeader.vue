@@ -23,9 +23,9 @@
 </template>
 
 
-<style>
+<style scoped>
 .header_wrapper {
-    padding-top: 20px;
+    padding: 20px 0;
 
 }
 
