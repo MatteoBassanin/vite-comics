@@ -37,3 +37,11 @@ body {
   width: 80%;
   margin: auto;
 }
+
+.p_relative {
+  position: relative;
+}
+
+.p_absolute {
+  position: absolute;
+}

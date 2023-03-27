@@ -28,12 +28,12 @@
 a {
     color: white;
     text-decoration: none;
-    margin: 0 20px;
+    margin: 0 30px;
     font: 12px;
 }
 
 li {
-    padding: 0 40px;
+    padding: 0 60px;
 }
 
 ul {

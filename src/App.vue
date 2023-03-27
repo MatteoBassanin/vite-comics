@@ -1,13 +1,17 @@
 <script>
 import TheHeader from './components/TheHeader.vue';
-import BlueBanner from './components/BlueBanner.vue'
+import BlueBanner from './components/BlueBanner.vue';
+import TheFooter from './components/TheFooter.vue';
+import TheDownFooter from './components/TheDownFooter.vue'
 
 
 export default {
 
   components: {
     TheHeader,
-    BlueBanner
+    BlueBanner,
+    TheFooter,
+    TheDownFooter
   }
 }
 </script>
@@ -18,6 +22,8 @@ export default {
     >>> Content goes here ---
   </main>
   <BlueBanner />
+  <TheFooter />
+  <TheDownFooter />
 </template>
 
 <style>
