@@ -10,7 +10,7 @@
             <div class="right_side d_flex align_center">
                 <h4>FOLLOW US</h4>
                 <ul class="d_flex">
-                    <li v-for="element in linkFooterDown"><a href="#"><img src={{ element.img }} alt=""></a></li>
+                    <li v-for="element in linkFooterDown"><a href="#"><img :src="element.img" alt=""></a></li>
 
                 </ul>
             </div>
