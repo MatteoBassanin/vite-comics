@@ -3,7 +3,9 @@
         <ul class="d_flex flex_wrap">
             <li v-for="(element, index) in linkCard" class="card_wrapper" :key="index">
                 <a href="#"><img :src="element.thumb" alt=""></a>
-                <h5><a href="#">{{ element.series }}</a></h5>
+                <div class="text_wrapper">
+                    <h5><a href="#">{{ element.series }}</a></h5>
+                </div>
             </li>
         </ul>
 
@@ -37,5 +39,9 @@ h5 {
 a {
     text-decoration: none;
     color: white;
+}
+
+.text_wrapper {
+    max-width: 180px;
 }
 </style>
