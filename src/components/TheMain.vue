@@ -1,9 +1,8 @@
 <template>
     <div class="container">
-        <div class="main_top">
-
-        </div>
+        <div class="main_top"></div>
         <div class="main_bot">
+            <div class="blue_botton"><a href="CURRENT SERIES"></a></div>
             <div class="cards_container w_80_auto">
                 <TheCard :linkCard="comicArray" />
             </div>
@@ -21,7 +20,7 @@
 }
 
 .main_bot {
-    height: 650px;
+    min-height: 650px;
     background-color: #1C1C1C;
 }
 </style>

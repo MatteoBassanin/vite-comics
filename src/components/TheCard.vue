@@ -1,9 +1,12 @@
 <template>
-    <div class="big_cards_wrapper d_flex flex_wrap">
-        <div v-for="(element, index) in linkCard" class="card_wrapper" :key="index">
-            <img :src="element.thumb" alt="">
-            <h5>{{ element.series }}</h5>
-        </div>
+    <div class="big_cards_wrapper">
+        <ul class="d_flex flex_wrap">
+            <li v-for="(element, index) in linkCard" class="card_wrapper" :key="index">
+                <a href="#"><img :src="element.thumb" alt=""></a>
+                <h5><a href="#">{{ element.series }}</a></h5>
+            </li>
+        </ul>
+
 
     </div>
 </template>
@@ -24,10 +27,15 @@ img {
 }
 
 .card_wrapper {
-    padding: 20px;
+    padding: 30px 20px;
 }
 
 h5 {
     font-size: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
 }
 </style>
