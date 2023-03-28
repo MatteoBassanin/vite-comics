@@ -2,10 +2,11 @@
     <div class="container">
         <div class="main_top"></div>
         <div class="main_bot">
-            <div class="blue_botton"><a href="CURRENT SERIES"></a></div>
+            <div class="blue_botton top"><a href="#">CURRENT SERIES</a></div>
             <div class="cards_container w_80_auto">
                 <TheCard :linkCard="comicArray" />
             </div>
+            <div class="blue_botton bot"><a href="#">LOAD MORE</a></div>
 
         </div>
 
@@ -22,6 +23,32 @@
 .main_bot {
     min-height: 650px;
     background-color: #1C1C1C;
+}
+
+.blue_botton {
+    background-color: #2881F6;
+    border: 1px solid #2881F6;
+    width: 150px;
+    text-align: center;
+    padding: 5px;
+    position: relative;
+}
+
+.top {
+    bottom: 15px;
+    left: 185px;
+}
+
+.bot {
+    transform: translate(-50%);
+    left: 50%;
+    top: 50px;
+
+}
+
+.blue_botton a {
+    text-decoration: none;
+    color: white;
 }
 </style>
 

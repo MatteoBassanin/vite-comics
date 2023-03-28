@@ -36,13 +36,17 @@ li {
 }
 
 .button {
-    border: 1px solid blue;
+    border: 1px solid #2881F6;
     padding: 10px;
 }
 
 .button a {
     text-decoration: none;
     color: white;
+}
+
+h4 {
+    color: #2881F6;
 }
 </style>
 
