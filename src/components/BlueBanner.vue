@@ -2,7 +2,7 @@
     <div class="wrapper d_flex align_center">
         <div class="action_list_wrapper w_80_auto ">
             <ul class="d_flex align_center justify_center">
-                <li v-for="element in shopArray" class="d_flex align_center"><img src="{{ element.picture }}" alt=""><a
+                <li v-for="element in shopArray" class="d_flex align_center"><img :src="element.picture" alt=""><a
                         href="#">{{
                             element.name }}</a></li>
             </ul>

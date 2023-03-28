@@ -10,11 +10,8 @@
             <div class="right_side d_flex align_center">
                 <h4>FOLLOW US</h4>
                 <ul class="d_flex">
-                    <li><a href="#"><img src="public/img/footer-facebook.png" alt=""></a></li>
-                    <li><a href="#"><img src="public/img/footer-twitter.png" alt=""></a></li>
-                    <li><a href="#"><img src="public/img/footer-youtube.png" alt=""></a></li>
-                    <li><a href="#"><img src="public/img/footer-pinterest.png" alt=""></a></li>
-                    <li><a href="#"><img src="public/img/footer-periscope.png" alt=""></a></li>
+                    <li v-for="element in linkFooterDown"><a href="#"><img src={{ element.img }} alt=""></a></li>
+
                 </ul>
             </div>
         </div>
@@ -49,4 +46,36 @@ li {
 }
 </style>
 
-<script></script>
+<script>
+
+export default {
+    data() {
+        return {
+            linkFooterDown: [
+                {
+                    img: "public/img/footer-facebook.png",
+                },
+                {
+                    img: "public/img/footer-twitter.png",
+                },
+                {
+                    img: "public/img/footer-youtube.png",
+                },
+                {
+                    img: "public/img/footer-pinterest.png",
+                },
+                {
+                    img: "public/img/footer-periscope.png",
+                },
+            ]
+        }
+    },
+
+
+    // methods: {
+    //     getImagePath: function (img) {
+    //         return new URL(`public/${img}`, import.meta.url).href;
+    //     }
+    // }
+};
+</script>
