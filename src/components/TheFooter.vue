@@ -33,7 +33,7 @@
                 </div>
             </div>
             <div class="right_side p_relative">
-                <img class="big_logo p_absolute" src="public/img/dc-logo-bg.png" alt="">
+                <!-- <img class="big_logo p_relative" src="public/img/dc-logo-bg.png" alt=""> -->
             </div>
         </div>
     </div>
@@ -138,10 +138,17 @@ export default {
 
 }
 
+
 .right_side {
     background-image: url("/img/dc-logo-bg.png");
-    z-index: 1;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 400px;
+    width: 560px;
+
 }
+
+
 
 ul {
     list-style: none;
@@ -161,8 +168,6 @@ h3 {
 }
 
 .big_logo {
-    right: 50px;
-
-    top: -95px;
+    bottom: 90px;
 }
 </style>
