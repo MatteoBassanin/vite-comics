@@ -4,7 +4,7 @@
             <img class="logo" src="/img/dc-logo.png" alt="">
         </div>
 
-        <nav class="navbar d_flex align_center">
+        <nav class="navbar d_flex">
             <ul class="d_flex ">
                 <li v-for="element in linkArrayTop" class="navbar_link"><a href="#">{{ element.name }}</a></li>
             </ul>
@@ -15,9 +15,12 @@
 
 
 <style scoped>
-.header_wrapper {
-    padding: 20px 0;
+img {
+    padding: 5px;
+}
 
+ul {
+    padding-top: 30px;
 }
 
 .logo {
@@ -28,6 +31,15 @@
     text-decoration: none;
     color: black;
     padding: 0 10px;
+}
+
+
+li:hover a {
+    color: #2881F6;
+}
+
+li:hover {
+    border-bottom: 3px solid #2881F6;
 }
 
 .navbar_link {
