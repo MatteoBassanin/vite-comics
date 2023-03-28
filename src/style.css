@@ -21,6 +21,10 @@ body {
   display: flex;
 }
 
+.flex_wrap {
+  flex-wrap: wrap;
+}
+
 .justify_center {
   justify-content: center;
 }

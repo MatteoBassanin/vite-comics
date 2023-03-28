@@ -4,8 +4,8 @@
 
         </div>
         <div class="main_bot">
-            <div class="cards_wrapper w_80_auto">
-                <TheCard />
+            <div class="cards_container w_80_auto">
+                <TheCard :linkCard="comicArray" />
             </div>
 
         </div>
